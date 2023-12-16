@@ -1,5 +1,5 @@
 {
-  description = "Market Data Service development shell";
+  description = "Go development shell";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";  # use the unstable packages for more up-to-date packages
@@ -44,7 +44,7 @@
           export GOPATH=$SHELL_PATH/go
 
           export PATH=$GOPATH/bin:$PATH
-          export GOPRIVATE="gitlab.com/gobl,gitlab.com/gofp,gitlab.com/oakenfield-services"
+          export GOPRIVATE="gitlab.com/gobl,gitlab.com/gofp,gitlab.com/ubquants"
 
           if [ -f go.mod ]; then
             echo "Found go.mod, running tidy"
