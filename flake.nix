@@ -42,7 +42,7 @@
           fi
 
           export SHELL_PATH=$XDG_CACHE/dev-shell/''${PWD##*/}
-/
+
           if [ ! -d $SHELL_PATH ]; then
             mkdir -p $SHELL_PATH
           fi
